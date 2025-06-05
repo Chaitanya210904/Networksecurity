@@ -30,3 +30,30 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
 
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
+
+def save_numpy_array_data(file_path: str, array: np.ndarray) -> None:
+    """
+    Save a NumPy array to a .npy file.
+
+    Args:
+        file_path (str): Path to save the NumPy array.
+        array (np.ndarray): The NumPy array to save.
+    """
+    try:
+        dir_path=os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            np.save(file_obj, array)
+        logging.info(f"NumPy array saved successfully to: {file_path}")
+    except Exception as e:
+        raise NetworkSecurityException(e, sys) from e
+def save_object(file_path: str, obj: object) -> None:
+
+    try:
+        logging.info("entered save_object")
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            dill.dump(obj, file_obj)
+        logging.info(f"Object saved successfully to: {file_path}")
+    except Exception as e:
+        raise NetworkSecurityException(e, sys) from e
