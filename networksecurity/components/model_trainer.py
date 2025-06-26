@@ -22,6 +22,9 @@ from sklearn.ensemble import (
     GradientBoostingClassifier,
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='Chaitanya210904', repo_name='Networksecurity', mlflow=True)
+
 
 
 class ModelTrainer:
@@ -108,7 +111,7 @@ class ModelTrainer:
 
             # Optional versioned model save
             timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-            final_model_path = f"final_model/model_{timestamp}.pkl"
+            final_model_path = f"final_model/model.pkl"
             save_object(final_model_path, best_model)
 
             model_trainer_artifact = ModelTrainerArtifact(
