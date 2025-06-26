@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/chaitanyaprasadkulkarni/Desktop/ml/mlruns/0/168d2c15a6004de2be8ef51309552ded/artifacts
+end_time: 1750912347180
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 168d2c15a6004de2be8ef51309552ded
+run_name: bedecked-penguin-13
+run_uuid: 168d2c15a6004de2be8ef51309552ded
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750912345205
+status: 3
+tags: []
+user_id: chaitanyaprasadkulkarni

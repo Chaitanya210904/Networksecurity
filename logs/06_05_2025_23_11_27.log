@@ -1,0 +1,23 @@
+[2025-06-05 23:11:29,154] 22 root - INFO - Initiate the data ingestion
+[2025-06-05 23:11:32,385] 59 root - INFO - Performed train-test split on DataFrame
+[2025-06-05 23:11:32,416] 67 root - INFO - Exported train and test data to their respective paths
+[2025-06-05 23:11:32,416] 24 root - INFO - Data ingestion completed
+[2025-06-05 23:11:32,419] 30 root - INFO - Initiate the data validation
+[2025-06-05 23:11:32,431] 31 root - INFO - required number of column: 2
+[2025-06-05 23:11:32,431] 32 root - INFO - data frame has column: 31
+[2025-06-05 23:11:32,431] 31 root - INFO - required number of column: 2
+[2025-06-05 23:11:32,431] 32 root - INFO - data frame has column: 31
+[2025-06-05 23:11:32,431] 48 root - INFO - All numerical columns exist in the dataframe.
+[2025-06-05 23:11:32,431] 48 root - INFO - All numerical columns exist in the dataframe.
+[2025-06-05 23:11:32,523] 32 root - INFO - Data validation completed
+[2025-06-05 23:11:32,523] 35 root - INFO - Data transformation started
+[2025-06-05 23:11:32,523] 46 root - INFO - entered initiate_data_transformation method
+[2025-06-05 23:11:32,523] 48 root - INFO - started data transformation
+[2025-06-05 23:11:32,533] 34 root - INFO - enterd get_data_transformer_object method
+[2025-06-05 23:11:32,533] 37 root - INFO - intialise Knnimputer with{'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-06-05 23:11:32,537] 50 root - INFO - NumPy array saved successfully to: Artifact/06_05_2025_23_11_28/data_transformation/transformed/train.npy
+[2025-06-05 23:11:32,538] 50 root - INFO - NumPy array saved successfully to: Artifact/06_05_2025_23_11_28/data_transformation/transformed/test.npy
+[2025-06-05 23:11:32,538] 56 root - INFO - entered save_object
+[2025-06-05 23:11:32,539] 60 root - INFO - Object saved successfully to: Artifact/06_05_2025_23_11_28/data_transformation/transformed_object/preprocessor.pkl
+[2025-06-05 23:11:32,539] 39 root - INFO - Data transformation completed
+[2025-06-05 23:11:32,539] 40 root - INFO - Model Training started

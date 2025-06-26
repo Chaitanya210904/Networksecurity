@@ -1,0 +1,22 @@
+[2025-06-05 15:42:20,744] 18 root - INFO - Initiate the data ingestion
+[2025-06-05 15:42:24,640] 59 root - INFO - Performed train-test split on DataFrame
+[2025-06-05 15:42:24,671] 67 root - INFO - Exported train and test data to their respective paths
+[2025-06-05 15:42:24,672] 20 root - INFO - Data ingestion completed
+[2025-06-05 15:42:24,675] 26 root - INFO - Initiate the data validation
+[2025-06-05 15:42:24,686] 31 root - INFO - required number of column: 2
+[2025-06-05 15:42:24,686] 32 root - INFO - data frame has column: 31
+[2025-06-05 15:42:24,686] 31 root - INFO - required number of column: 2
+[2025-06-05 15:42:24,686] 32 root - INFO - data frame has column: 31
+[2025-06-05 15:42:24,686] 48 root - INFO - All numerical columns exist in the dataframe.
+[2025-06-05 15:42:24,686] 48 root - INFO - All numerical columns exist in the dataframe.
+[2025-06-05 15:42:24,781] 28 root - INFO - Data validation completed
+[2025-06-05 15:42:24,781] 31 root - INFO - Data transformation started
+[2025-06-05 15:42:24,781] 46 root - INFO - entered initiate_data_transformation method
+[2025-06-05 15:42:24,781] 48 root - INFO - started data transformation
+[2025-06-05 15:42:24,791] 34 root - INFO - enterd get_data_transformer_object method
+[2025-06-05 15:42:24,791] 37 root - INFO - intialise Knnimputer with{'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-06-05 15:42:24,795] 47 root - INFO - NumPy array saved successfully to: Artifact/06_05_2025_15_42_19/data_transformation/transformed/train.npy
+[2025-06-05 15:42:24,796] 47 root - INFO - NumPy array saved successfully to: Artifact/06_05_2025_15_42_19/data_transformation/transformed/test.npy
+[2025-06-05 15:42:24,796] 53 root - INFO - entered save_object
+[2025-06-05 15:42:24,798] 57 root - INFO - Object saved successfully to: Artifact/06_05_2025_15_42_19/data_transformation/transformed_object/preprocessor.pkl
+[2025-06-05 15:42:24,798] 35 root - INFO - Data transformation completed

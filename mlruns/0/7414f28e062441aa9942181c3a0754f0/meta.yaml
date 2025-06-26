@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/chaitanyaprasadkulkarni/Desktop/ml/mlruns/0/7414f28e062441aa9942181c3a0754f0/artifacts
+end_time: 1750912345187
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7414f28e062441aa9942181c3a0754f0
+run_name: kindly-rook-180
+run_uuid: 7414f28e062441aa9942181c3a0754f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750912342324
+status: 3
+tags: []
+user_id: chaitanyaprasadkulkarni
